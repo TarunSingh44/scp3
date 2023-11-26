@@ -77,7 +77,8 @@ class Server:
                             ] = p_bot_name
                             send_tcp(
                                 message=make_data_packet(
-                                    content_name=f"{self.host}-{self.port}-rendezvous-server/beacon/on",
+                                    content_name = self.host + "-" + str(self.port) + "-rendezvous-server/beacon/on",
+                                    #content_name=f"{self.host}-{self.port}-rendezvous-server/beacon/on",
                                     data={
                                         "name": p_bot_name,
                                         "host": p_bot_data["host"],
