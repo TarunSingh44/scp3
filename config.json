@@ -1,0 +1,9 @@
+{
+    "rendezvous_server": ["127.0.0.1", 33000],
+    "blood_stream_length": 20,
+    "blood_speed": 0.5,
+    "markers": ["tumour", "acidity", "growth", "survivin", "ecmr"],
+    "primary_marker": "tumour",
+    "timeout": {"beacon_search":100, "last_conn":300},
+    "trials": {"beacon_search":200, "tumour_search":200}
+}
